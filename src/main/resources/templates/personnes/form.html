@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulaire Personne</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<h1 th:text="${personne.id == 0} ? 'Ajouter une personne' : 'Modifier une personne'"
+    style="text-align: center; margin-bottom: 30px;">
+</h1>
+
+<form th:action="@{/personnes/enregistrer}" th:object="${personne}" method="post" style="max-width: 500px; margin: auto;">
+    <input type="hidden" th:field="*{id}" />
+
+    <div style="margin-bottom: 10px;">
+        <label style="display: inline-block; width: 100px;">Nom :</label>
+        <input type="text" th:field="*{nom}" required />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <label style="display: inline-block; width: 100px;">Prénom :</label>
+        <input type="text" th:field="*{prenom}" required />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <label style="display: inline-block; width: 100px;">Âge :</label>
+        <input type="number" th:field="*{age}" required />
+    </div>
+
+    <div style="margin-bottom: 20px;">
+        <label style="display: inline-block; width: 100px;">Classe :</label>
+        <input type="text" th:field="*{classe}" required />
+    </div>
+
+    <button type="submit">💾 Enregistrer</button>
+    <a th:href="@{/personnes}">Retour</a>
+</form>
+
+
+</body>
+</html>
