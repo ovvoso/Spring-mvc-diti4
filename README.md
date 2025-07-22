@@ -98,7 +98,7 @@ L'application sera accessible à l'adresse : `http://localhost:2025/personnes`
 
 ## 📷 Captures d'écran
 
-<img  src="/src/main/resources/Captures/Capt1.png"/>
+<img src="src/main/resources/Captures/Capt1.png" alt="Capture d'écran de l'application" />
 
 ## 🤝 Contribution
 
