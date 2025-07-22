@@ -49,65 +49,6 @@ src/
 │               └── form.html
 ```
 
-## 📤 Mise en ligne sur GitHub
-
-### Étapes pour mettre le projet sur GitHub
-
-#### 1. Créer un repository sur GitHub
-- Allez sur [github.com](https://github.com) et connectez-vous
-- Cliquez sur "New repository"
-- Nommez votre repository : `spring-mvc-diti4`
-- Ajoutez une description : "🚀 Application web Spring Boot pour la gestion des personnes avec CRUD complet, 🔍 recherche et 📱 interface responsive"
-- Ne cochez pas "Initialize with README" (vous en avez déjà un)
-- Cliquez sur "Create repository"
-
-#### 2. Initialiser Git localement
-Ouvrez un terminal dans le dossier de votre projet et exécutez :
-
-```bash
-# Initialiser le repository Git
-git init
-
-# Ajouter tous les fichiers
-git add .
-
-# Premier commit
-git commit -m "Initial commit: Spring MVC DITI4 project"
-
-# Renommer la branche principale
-git branch -M main
-```
-
-#### 3. Lier votre projet au repository GitHub
-
-```bash
-# Remplacez YOUR_USERNAME par votre nom d'utilisateur GitHub
-git remote add origin https://github.com/YOUR_USERNAME/spring-mvc-diti4.git
-
-# Pousser votre code sur GitHub
-git push -u origin main
-```
-
-#### 4. Commandes utiles pour les mises à jour futures
-
-```bash
-# Ajouter les modifications
-git add .
-
-# Commit avec message
-git commit -m "Description de vos modifications"
-
-# Pousser vers GitHub
-git push origin main
-
-# Vérifier le statut
-git status
-
-# Voir l'historique des commits
-git log --oneline
-```
-
-
 ## ⚙️ Installation et Configuration
 
 ### Prérequis
@@ -153,58 +94,11 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-L'application sera accessible à l'adresse : `http://localhost:8080/personnes`
-
-## 🚀 Utilisation
-
-### Page d'accueil
-- Accédez à `http://localhost:8080/personnes`
-- Visualisez la liste paginée des personnes
-
-### Ajouter une personne
-1. Cliquez sur "➕ Ajouter une personne"
-2. Remplissez le formulaire (nom, prénom, âge, classe)
-3. Cliquez sur "💾 Enregistrer"
-
-### Rechercher
-- Utilisez la barre de recherche en haut de la page
-- Tapez un nom ou prénom et cliquez sur "Rechercher"
-- Cliquez sur "Réinitialiser" pour afficher toutes les personnes
-
-### Modifier une personne
-1. Cliquez sur "✏️ Modifier" dans la ligne correspondante
-2. Modifiez les informations souhaitées
-3. Cliquez sur "💾 Enregistrer"
-
-### Supprimer une personne
-1. Cliquez sur "🗑️ Supprimer" dans la ligne correspondante
-2. Confirmez la suppression dans la boîte de dialogue
-
-## 📊 Modèle de données
-
-### Entité Personne
-
-| Champ   | Type    | Description                |
-|---------|---------|----------------------------|
-| id      | Integer | Identifiant unique (auto)  |
-| nom     | String  | Nom de famille            |
-| prenom  | String  | Prénom                    |
-| age     | Integer | Âge de la personne        |
-| classe  | String  | Classe d'appartenance     |
-
-## 🔧 API Endpoints
-
-| Méthode | URL                    | Description                    |
-|---------|------------------------|--------------------------------|
-| GET     | `/personnes`           | Liste des personnes           |
-| GET     | `/personnes/ajouter`   | Formulaire d'ajout            |
-| POST    | `/personnes/enregistrer` | Enregistrer une personne    |
-| GET     | `/personnes/modifier/{id}` | Formulaire de modification |
-| GET     | `/personnes/supprimer/{id}` | Supprimer une personne    |
+L'application sera accessible à l'adresse : `http://localhost:2025/personnes`
 
 ## 📷 Captures d'écran
 
-*Ajoutez ici des captures d'écran de votre application*
+<img  src="../../../Capture1.png"/>
 
 ## 🤝 Contribution
 
@@ -214,21 +108,20 @@ L'application sera accessible à l'adresse : `http://localhost:8080/personnes`
 4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
 5. Créez une Pull Request
 
-## 📝 To-Do
-
-- [ ] Ajouter la validation des formulaires
-- [ ] Implémenter l'authentification
-- [ ] Ajouter des tests unitaires
-- [ ] Améliorer le design responsive
-- [ ] Ajouter l'export en PDF/Excel
-
 ## 📄 Licence
 
 Ce projet est développé dans un cadre pédagogique pour le cours DITI4.
 
 ## 👨‍💻 Auteur
 
-- **Votre Nom** - *Étudiant DITI4*
+- **Thierno Maadjou Sow**
+- 📧 Email: thiernomaadjous@gmail.com
+- 💼 LinkedIn: [Thierno Maadjou Sow](www.linkedin.com/in/sow-thierno-maadjou-developpeur)
+- 🌐 GitHub: [ThiernoMaadjou](https://github.com/ThiernoMaadjou)
+
+## 📞 Contact
+
+Pour toute question ou suggestion concernant ce projet, n'hésitez pas à me contacter!
 
 ---
 
